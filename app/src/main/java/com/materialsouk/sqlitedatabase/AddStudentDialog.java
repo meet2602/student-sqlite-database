@@ -186,7 +186,7 @@ public class AddStudentDialog extends DialogFragment {
         } else {
             if (updateSate) {
                 myDB.updateStudent(edStudentName.getText().toString().trim(),
-                        edPassword.getText().toString().trim(),
+                        studentList.get(updatePos).getPassword(),
                         edStudentAddress.getText().toString().trim(),
                         edStudentPhoneNo.getText().toString().trim(),
                         edStudentEmail.getText().toString().trim(),
@@ -199,7 +199,7 @@ public class AddStudentDialog extends DialogFragment {
                         edStudentPhoneNo.getText().toString().trim(),
                         edStudentEmail.getText().toString().trim(),
                         edDateBirth.getText().toString().trim(),
-                        edPassword.getText().toString().trim()
+                        studentList.get(updatePos).getPassword()
                 ));
                 studentAdapter.notifyItemChanged(updatePos);
                 AllNullEditText();

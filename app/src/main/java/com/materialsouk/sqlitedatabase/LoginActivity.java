@@ -91,6 +91,7 @@ public class LoginActivity extends AppCompatActivity {
 
             Cursor cursor = myDB.checkEmailPassword(edEmailId.getText().toString().trim(), edPassword.getText().toString().trim());
             if (cursor.getCount() <= 0) {
+                findViewById(R.id.view_user_card).setVisibility(View.GONE);
                 Toast.makeText(this, "Not Found!", Toast.LENGTH_SHORT).show();
             }
             while (cursor.moveToNext()) {

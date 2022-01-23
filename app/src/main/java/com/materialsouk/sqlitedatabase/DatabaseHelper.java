@@ -83,9 +83,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return cursor;
     }
 
-    public void updateStudent(String studentName,
-                              String password,
-                              String studentAddress,
+    public void updateStudent(String studentName, String studentAddress,
                               String studentPhoneNo,
                               String studentEmail,
                               String studentDOB,
@@ -97,8 +95,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         cv.put(COLUMN_studentPhoneNo, studentPhoneNo);
         cv.put(COLUMN_studentEmail, studentEmail);
         cv.put(COLUMN_studentDOB, studentDOB);
-        cv.put(COLUMN_password, password);
-        cv.put(COLUMN_studentId, id);
 
         long result = db.update(TABLE_NAME_NEW_STUDENT, cv, "studentId=?", new String[]{id});
         if (result == -1) {

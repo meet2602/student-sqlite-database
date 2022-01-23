@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Sqlite Database</string>
+    <string name="enter_the_password">Enter the Password</string>
+    <string name="enter_the_name">Enter the Name</string>
+    <string name="submit">Submit</string>
+    <string name="add_user">Add Student</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="cancel">Cancel</string>
+    <string name="enter_the_address">Enter the Address</string>
+    <string name="enter_the_mobile_no">Enter the Mobile No.</string>
+    <string name="enter_the_email">Enter the Email</string>
+    <string name="enter_the_date_of_birth">Enter the Date of Birth</string>
+    <string name="save">Save</string>
+    <string name="enter_the_confirm_password">Enter the confirm Password</string>
+    <string name="display_all_student">Display All Student</string>
+    <string name="create_account">Create Account</string>
+    <string name="sign_in">Sign In</string>
+    <string name="login_page">Login Page</string>
+</resources>
